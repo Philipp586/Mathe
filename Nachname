@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vor- und Nachname</title>
+</head>
+<body>
+
+<header>
+<h1>Vor- und Nachname:</h1>
+</header>
+
+<main>
+
+<script>
+ let vorname;
+ let nachname;
+ vorname = prompt('Bitte geben Sie Ihren Namen ein!','');
+ nachname = prompt ('Bitte geben Sie Ihren Nachnamen ein!','');
+ alert('Hallo, ' + vorname + ' ' + nachname);
+</script>
+
+</main>
+
+</body>
+</html>
