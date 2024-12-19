@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lösung Mathe mit Mitternachtsformel</title>
+</head>
+<body>
+
+<header>
+<h1>Mein Rechner zum Lösen der Mitternachtsformel:</h1>
+</header>
+
+<main>
+<script>
+
+const ZahlA = Number(prompt('Wert für Zahl A!'));
+const ZahlB = Number(prompt('Wert für Zahl B!'));
+const ZahlC = Number(prompt('Wert für Zahl C!'));
+
+
+const diskriminante = (ZahlB * ZahlB) - (4 * ZahlA * ZahlC);
+
+
+if (diskriminante > 0) {
+   
+    const X1 = (-ZahlB + Math.sqrt(diskriminante)) / (2 * ZahlA);
+    const X2 = (-ZahlB - Math.sqrt(diskriminante)) / (2 * ZahlA);
+    alert(`Die Diskriminante ist: ${diskriminante}. Es gibt zwei reelle Lösungen: X1 = ${X1} und X2 = ${X2}`);
+
+
+}
+</script>
+</main>
+
+</body>
+</html>
